@@ -32,85 +32,93 @@
     <!-- %%%%% home section code start %%%%%%% -->
     <main class="bg-gradient-to-r from-GradientMixtureFirst via-GradientMixtureSecond to-GradientMixtureThird">
         <!-- header and navbar code start -->
-        <!-- helpline no or email -->
-        <div>
-            <div class="w-full  justify-end items-center py-3 pr-10  hidden md:flex">
-                <i class="bi bi-telephone-fill text-xl text-secondaryColor"></i>
-                <h2 class="text-lg font-SecondaryFont px-3">Helpline no : 9905730935</h2>
+        <header>
+            <!-- desktop navigation bar -->
+            <div class="flex justify-between items-center w-full py-5 px-2 sm:px-5">
+                <!-- logo -->
+                <a href="#" class="flex justify-center items-center space-x-2">
+                    <!-- logo image -->
+                    <div class="w-12 h-12 hidden sm:block rounded-full bg-center bg-cover bg-no-repeat">
+                        <img src="Images/Logo.jpg" alt="logo image" class="w-full h-full rounded-full">
+                    </div>
+                    <!-- logo image -->
+                    <!-- logo text  -->
+                    <div>
+                        <h2 class="text-xl font-SecondaryFont">Kashish<span class="text-secondaryColor">Cosmetics</span>
+                        </h2>
+                    </div>
+                    <!-- logo text  -->
+                </a>
+                <!-- logo -->
+                <!-- navlinks and user otption -->
+                <nav class="flex justify-between items-center space-x-5">
+                    <!-- navigation links -->
+                    <ul class="hidden md:flex">
+                        <li class="px-5 text-sm font-Ubuntu transition-all hover:text-secondaryColor"><a
+                                href="#">Home</a>
+                        </li>
+                        <li class="px-5 text-sm font-Ubuntu transition-all hover:text-secondaryColor"><a
+                                href="#">About</a>
+                        </li>
+                        <li class="px-5 text-sm font-Ubuntu transition-all hover:text-secondaryColor"><a
+                                href="/shop.html">Shop</a>
+                        </li>
+                        <li class="px-5 text-sm font-Ubuntu transition-all hover:text-secondaryColor"><a
+                                href="#">Service</a></li>
+                        <li class="px-5 text-sm font-Ubuntu transition-all hover:text-secondaryColor"><a
+                                href="#">Contact</a></li>
+                    </ul>
+                    <!-- navigation links -->
+                    <!-- cart and profile -->
+                    <div class="flex justify-center items-center space-x-4">
+                        <a href="#">
+                            <i class="bi bi-cart4 text-xl transition-all hover:text-secondaryColor"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-person-fill text-xl transition-all hover:text-secondaryColor"></i>
+                        </a>
+                    </div>
+                    <!-- cart and profile -->
+                    <!-- mobile menu button -->
+                    <div class="flex items-center md:hidden">
+                        <button class="mobile-menu-btn">
+                            <i class="bi bi-list text-2xl"></i>
+                        </button>
+                    </div>
+                    <!-- mobile menu button -->
+                </nav>
             </div>
-            <!-- helpline no or email -->
-            <header class="flex justify-between items-center w-full px-2 md:px-5">
-                <!-- header logo image and text code start -->
-                <div class="flex justify-center items-center">
-                    <!-- header logo image -->
-                    <div class="w-10 h-10 rounded-full hidden sm:block">
-                        <img src="Images/Logo.jpg" alt="logo image" class="rounded-full">
-                    </div>
-                    <!-- header logo image -->
-                    <!-- logo code -->
-                    <a href="#" class="text-xl font-SecondaryFont px-2 md:text-2xl ">Kashish<span
-                            class="text-secondaryColor">Cosmetics</span></a>
-                    <!-- logo code -->
-                </div>
-                <!-- header logo image and text code ends -->
-                <!-- navbar/navlinks code start -->
-                <div class="flex justify-between items-center">
-                    <nav
-                        class="py-1 absolute top-20 left-40  h-[100vh]   bg-OptionalColor xs:w-full max-w-sm hidden md:flex justify-center items-center md:static md:bg-transparent md:h-0">
-                        <ul class="block md:flex">
-                            <li class="px-5 py-5 md:py-0">
-                                <i class="bi bi-house-fill text-2xl text-secondaryColor md:hidden"></i>
-                                <a href="#"
-                                    class="text-xl font-Ubuntu px-4 md:px-0  transition-all hover:text-secondaryColor md:text-sm">Home</a>
-                            </li>
-                            <li class="px-5 py-5 md:py-0">
-                                <i class="bi bi-file-earmark-person-fill text-2xl text-secondaryColor md:hidden"></i>
-                                <a href="#"
-                                    class="text-xl font-Ubuntu px-4 md:px-0  transition-all hover:text-secondaryColor md:text-sm">About</a>
-                            </li>
-                            <li class="px-5 py-5 md:py-0">
-                                <i class="bi bi-cart4 text-2xl text-secondaryColor md:hidden"></i>
-                                <a href="#"
-                                    class="text-xl font-Ubuntu px-4 md:px-0  transition-all hover:text-secondaryColor md:text-sm">Shop</a>
-                            </li>
-                            <li class="px-5 py-5 md:py-0">
-                                <i class="bi bi-truck text-2xl text-secondaryColor md:hidden"></i>
-                                <a href="#"
-                                    class="text-xl font-Ubuntu px-4 md:px-0  transition-all hover:text-secondaryColor md:text-sm">Service</a>
-                            </li>
-                            <li class="px-5 py-5 md:py-0">
-                                <i class="bi bi-telephone-fill text-2xl text-secondaryColor md:hidden"></i>
-                                <a href="#"
-                                    class="text-xl font-Ubuntu px-4 md:px-0  transition-all hover:text-secondaryColor md:text-sm">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!-- navbar/navlinks code ends -->
-                    <!-- user profile and cart code start  -->
-                    <div class="flex justify-center items-center">
-                        <!-- cart -->
-                        <div class="px-2 py-2">
-                            <i
-                                class="bi bi-cart4 text-lg transition-all cursor-pointer hover:text-secondaryColor md:text-xl"></i>
-                        </div>
-                        <!-- cart -->
-                        <!-- account -->
-                        <div class="px-2 py-2">
-                            <i
-                                class="bi bi-person-fill text-lg transition-all cursor-pointer hover:text-secondaryColor md:text-xl"></i>
-                        </div>
-                        <!-- account -->
-                    </div>
-                    <!-- user profile and cart code ends  -->
-                    <!-- Menu bar code start-->
-                    <div class="pr-4 py-2 md:hidden">
-                        <i class="bi bi-list text-xl"></i>
-                    </div>
-                    <!-- Menu bar code start-->
-                </div>
-            </header>
-        </div>
-        <hr class="my-2">
+            <!-- navlinks and user otption -->
+            <!-- desktop navigation bar -->
+            <!-- %%%%%%%%% mobile navigaton menu and navigation links code %%%%%%%%%%% -->
+            <!-- mobile navigation links -->
+            <div class="mobile-menu hidden w-full max-w-[300px] bg-OptionalColor px-10 h-[100vh]  absolute top-0 left-0">
+                <ul class="block my-3   md:hidden">
+                    <li class="py-5 text-xl font-Ubuntu transition-all hover:text-secondaryColor space-x-3">
+                        <i class="bi bi-house transition-all hover:text-secondaryColor"></i>
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="py-5 text-xl font-Ubuntu transition-all hover:text-secondaryColor space-x-3">
+                        <i class="bi bi-file-person transition-all hover:text-secondaryColor"></i>
+                        <a href="#">About</a>
+                    </li>
+                    <li class="py-5 text-xl font-Ubuntu transition-all hover:text-secondaryColor space-x-3">
+                        <i class="bi bi-cart4 transition-all hover:text-secondaryColor"></i>
+                        <a href="#">Shop</a>
+                    </li>
+                    <li class="py-5 text-xl font-Ubuntu transition-all hover:text-secondaryColor space-x-3">
+                        <i class="bi bi-truck transition-all hover:text-secondaryColor"></i>
+                        <a href="#">Service</a>
+                    </li>
+                    <li class="py-5 text-xl font-Ubuntu transition-all hover:text-secondaryColor space-x-3">
+                        <i class="bi bi-telephone-fill transition-all hover:text-secondaryColor"></i>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- mobile navigation links -->
+            <!-- %%%%%%%%% mobile navigaton menu and navigation links code %%%%%%%%%%% -->
+        </header>
         <!-- header and navbar code ends -->
         <!-- %%%%%%%%%%%% hero section code start %%%%%%%%%%% -->
         <section class="px-5 py-20  md:px-20 w-full">

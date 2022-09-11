@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <!-- %%%%%% stylesheet file start %%%%%%% -->
+    <link rel="stylesheet" href="style.css">
+    <!-- %%%%%% stylesheet file  end  %%%%%%% -->
+    <!-- %%%%%% script file  start  %%%%%%% -->
+    <script src="js/main.js" defer></script>
+    <!-- %%%%%% script file  end  %%%%%%% -->
+    <!-- %%%%%% fonts links start %%%%%%% -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700;800&family=Ubuntu:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/please" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/yeseva-one" rel="stylesheet">
+    <!-- %%%%%% fonts links end   %%%%%%% -->
+    <!-- %%%%%% Bootstrap icons links start %%%%%%% -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- %%%%%% Bootstrap icons end   %%%%%%% -->
+</head>
+
+<body>
+    <!-- %%%%%%%% main container %%%%%%%%%%%%%%%-->
+    <main>
+        <!-- header and navbar code start -->
+        <header class="">
+            <!-- desktop navigation bar -->
+            <div class="flex justify-between items-center w-full py-5 px-2 sm:px-5">
+                <!-- logo -->
+                <a href="#" class="flex justify-center items-center space-x-2">
+                    <!-- logo image -->
+                    <div class="w-12 h-12 hidden sm:block rounded-full bg-center bg-cover bg-no-repeat">
+                        <img src="Images/Logo.jpg" alt="logo image" class="w-full h-full rounded-full">
+                    </div>
+                    <!-- logo image -->
+                    <!-- logo text  -->
+                    <div>
+                        <h2 class="text-xl font-SecondaryFont">Kashish<span class="text-secondaryColor">Cosmetics</span>
+                        </h2>
+                    </div>
+                    <!-- logo text  -->
+                </a>
+                <!-- logo -->
+                <!-- navlinks and user otption -->
+                <nav class="flex justify-between items-center space-x-5">
+                    <!-- navigation links -->
+                    <ul class="hidden md:flex">
+                        <li class="px-5 text-sm font-Ubuntu transition-all hover:text-secondaryColor"><a
+                                href="#">Home</a>
+                        </li>
+                        <li class="px-5 text-sm font-Ubuntu transition-all hover:text-secondaryColor"><a
+                                href="#">About</a>
+                        </li>
+                        <li class="px-5 text-sm font-Ubuntu transition-all hover:text-secondaryColor"><a
+                                href="/shop.html">Shop</a>
+                        </li>
+                        <li class="px-5 text-sm font-Ubuntu transition-all hover:text-secondaryColor"><a
+                                href="#">Service</a></li>
+                        <li class="px-5 text-sm font-Ubuntu transition-all hover:text-secondaryColor"><a
+                                href="#">Contact</a></li>
+                    </ul>
+                    <!-- navigation links -->
+                    <!-- cart and profile -->
+                    <div class="flex justify-center items-center space-x-4">
+                        <a href="#">
+                            <i class="bi bi-cart4 text-xl transition-all hover:text-secondaryColor"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-person-fill text-xl transition-all hover:text-secondaryColor"></i>
+                        </a>
+                    </div>
+                    <!-- cart and profile -->
+                    <!-- mobile menu button -->
+                    <div class="flex items-center md:hidden">
+                        <button class="mobile-menu-btn">
+                            <i class="bi bi-list text-2xl"></i>
+                        </button>
+                    </div>
+                    <!-- mobile menu button -->
+                </nav>
+            </div>
+            <!-- navlinks and user otption -->
+            <!-- desktop navigation bar -->
+            <!-- %%%%%%%%% mobile navigaton menu and navigation links code %%%%%%%%%%% -->
+            <!-- mobile navigation links -->
+            <div class="mobile-menu hidden max-w-[300px] bg-OptionalColor px-10 h-[100vh] md:hidden">
+                <ul class="block my-3   md:hidden">
+                    <li class="py-5 text-xl font-Ubuntu transition-all hover:text-secondaryColor space-x-3">
+                        <i class="bi bi-house transition-all hover:text-secondaryColor"></i>
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="py-5 text-xl font-Ubuntu transition-all hover:text-secondaryColor space-x-3">
+                        <i class="bi bi-file-person transition-all hover:text-secondaryColor"></i>
+                        <a href="#">About</a>
+                    </li>
+                    <li class="py-5 text-xl font-Ubuntu transition-all hover:text-secondaryColor space-x-3">
+                        <i class="bi bi-cart4 transition-all hover:text-secondaryColor"></i>
+                        <a href="#">Shop</a>
+                    </li>
+                    <li class="py-5 text-xl font-Ubuntu transition-all hover:text-secondaryColor space-x-3">
+                        <i class="bi bi-truck transition-all hover:text-secondaryColor"></i>
+                        <a href="#">Service</a>
+                    </li>
+                    <li class="py-5 text-xl font-Ubuntu transition-all hover:text-secondaryColor space-x-3">
+                        <i class="bi bi-telephone-fill transition-all hover:text-secondaryColor"></i>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- mobile navigation links -->
+            <!-- %%%%%%%%% mobile navigaton menu and navigation links code %%%%%%%%%%% -->
+        </header>
+        <!-- header and navbar code ends -->
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%% product and filter section code start %%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%%%%%%%%%%% -->
+        <section class="py-2">
+            <!-- %%%%%%% product and filter option section code start %%%%%%%%% -->
+            <div class="grid grid-cols-5 gap-5 px-5">
+                <!-- %%% filter option sidebar start %%%%%%%%%%%% -->
+                <div class="px-2">
+                    <!-- heading -->
+                    <h3>Filter</h3>
+                    <!-- heading -->
+                    <!-- Categories -->
+                    <div class="my-4">
+                        <h3>Categories</h3>
+                        <!-- categories option container -->
+                        <div class="py-3">
+                            <!-- { Products categories list start} -->
+                            <ul>
+                                <!-- {specific product categories list according to use} -->
+                                <li>
+                                    <button class="shop-menu-btn flex justify-between items-center w-full">
+                                        <span class="font-SecondaryFont text-sm text-secondaryColor">Makeup</span>
+                                        <i class="bi bi-chevron-down text-secondaryColor"></i>
+                                    </button>
+                                    <!-- {menu content/ specific categories} -->
+                                    <div class="shop-menu-list my-3 mx-4 block">
+                                        <ul>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="face" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">Face</h3>
+                                                </a>
+                                            </li>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="Lips" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">Eyes</h3>
+                                                </a>
+                                            </li>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="Eyes" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">Lips</h3>
+                                                </a>
+                                            </li>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="Tools" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">Tools</h3>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- {menu content/ specific categories} -->
+                                </li>
+                                <!-- {specific product categories list according to use} -->
+                                <!-- {specific product categories list according to use} -->
+                                <li>
+                                    <button class="shop-menu-btn flex justify-between items-center w-full">
+                                        <span class="font-SecondaryFont text-sm text-secondaryColor">Skin</span>
+                                        <i class="bi bi-chevron-down text-secondaryColor"></i>
+                                    </button>
+                                    <!-- {menu content/ specific categories} -->
+                                    <div class="shop-menu-list my-3 mx-4 block">
+                                        <ul>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="face" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">Moistorizer</h3>
+                                                </a>
+                                            </li>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="face" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">Cleanser</h3>
+                                                </a>
+                                            </li>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="face" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">Mask</h3>
+                                                </a>
+                                            </li>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="face" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">BodyCare</h3>
+                                                </a>
+                                            </li>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="face" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">NeckCream</h3>
+                                                </a>
+                                            </li>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="face" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">EyeCare</h3>
+                                                </a>
+                                            </li>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="face" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">LipsCare</h3>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- {menu content/ specific categories} -->
+                                </li>
+                                <!-- {specific product categories list according to use} -->
+                                <!-- {specific product categories list according to use} -->
+                                <li>
+                                    <button class="shop-menu-btn flex justify-between items-center w-full">
+                                        <span class="font-SecondaryFont text-sm text-secondaryColor">Hair</span>
+                                        <i class="bi bi-chevron-down text-secondaryColor"></i>
+                                    </button>
+                                    <!-- {menu content/ specific categories} -->
+                                    <div class="shop-menu-list my-3 mx-4 block">
+                                        <ul>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="face" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">Shampoo</h3>
+                                                </a>
+                                            </li>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="face" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">Conditioner</h3>
+                                                </a>
+                                            </li>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="face" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">Serum</h3>
+                                                </a>
+                                            </li>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="face" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">HairMask</h3>
+                                                </a>
+                                            </li>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="face" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">Oil</h3>
+                                                </a>
+                                            </li>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="face" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">HairColor</h3>
+                                                </a>
+                                            </li>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="face" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">Gel & wax</h3>
+                                                </a>
+                                            </li>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="face" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">Spray</h3>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- {menu content/ specific categories} -->
+                                </li>
+                                <!-- {specific product categories list according to use} -->
+                                <!-- {specific product categories list according to use} -->
+                                <li>
+                                    <button class="shop-menu-btn flex justify-between items-center w-full">
+                                        <span class="font-SecondaryFont text-sm text-secondaryColor">Body and
+                                            Bath</span>
+                                        <i class="bi bi-chevron-down text-secondaryColor"></i>
+                                    </button>
+                                    <!-- {menu content/ specific categories} -->
+                                    <div class="shop-menu-list my-3 mx-4 block">
+                                        <ul>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="face" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">Soap</h3>
+                                                </a>
+                                            </li>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="face" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">Scrub</h3>
+                                                </a>
+                                            </li>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="face" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">BodyLotion</h3>
+                                                </a>
+                                            </li>
+                                            <li class="space-y-4">
+                                                <a href="" class="flex space-x-3">
+                                                    <input type="checkbox" name="face" id="checkbox"
+                                                        class="accent-secondaryColor">
+                                                    <h3 class="font-Ubuntu text-sm ">Cleanser</h3>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- {menu content/ specific categories} -->
+                                </li>
+                                <!-- {specific product categories list according to use} -->
+                            </ul>
+                            <!-- { Products categories list ends} -->
+                        </div>
+                        <!-- categories option container -->
+                    </div>
+                    <!-- Categories -->
+                    <!-- price ranges -->
+                    <div class="my-5 w-full">
+                        <h3 class="font-SecondaryFont text-sm text-secondaryColor">Price range</h3>
+                        <div class="my-2 space-y-2 w-full">
+                            <!-- range input field -->
+                            <div class="flex justify-center items-center space-x-3">
+                                <h4 class="text-xs text-GrayColor">Min</h4>
+                                <input type="text" placeholder="Rs 50"
+                                    class="text-black outline-none border-none text-sm text-center">
+                            </div>
+                            <!-- range input field -->
+                            <!-- range input field -->
+                            <div class="flex justify-center items-center space-x-3">
+                                <h4 class="text-xs text-GrayColor">Max</h4>
+                                <input type="text" placeholder="Rs 4000"
+                                    class="text-black outline-none border-none text-sm text-center">
+                            </div>
+                            <!-- range input field -->
+                        </div>
+                        <div class="my-8">
+                            <a href="#"
+                                class="px-10 py-2 rounded-md bg-secondaryColor text-WhiteColor font-Ubuntu text-sm">Set
+                                Price</a>
+                        </div>
+                    </div>
+                    <!-- price ranges -->
+                </div>
+                <!-- %%% filter option sidebar  ends %%%%%%%%%%%% -->
+
+<!-- %%%%%%%%%%%%%%%%%%%% main product container/section code start %%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%%%%%%%% -->
+                <div class="col-start-2 col-span-3">
+                    <!-- %%%%%%% product and search bar base code start %%%%%%%% -->
+                    <div class="grid grid-rows-2 h-44">
+                        <!-- %%%%%% product search bar code %%%%%%%%% -->
+                        <div class="w-full flex justify-center items-center">
+                            <div class="w-full space-x-2 flex justify-center items-center">
+                                <a href="#">
+                                    <i class="bi bi-search text-sm text-ButtonColorFirst"></i>
+                                </a>
+                                <input type="search" placeholder="Search your product"
+                                    class="w-full outline-none border-none py-1 px-3 text-sm">
+                            </div>
+                        </div>
+                        <!-- %%%%%% product search bar code %%%%%%%%% -->
+                        <!-- %%%%%%% product boxes container and filter buttons code %%%%%%%% -->
+                        <div class="my-3">
+                            <!-- %%%%%%% product boxes filter option %%%%%%%%% -->
+                            <div class="w-full flex justify-start items-start space-x-10">
+                                <!-- filter buttons -->
+                                <a href="#" class="px-6 py-1 rounded-md bg-GrayColor text-WhiteColor text-sm font-Ubuntu">Sort</a>
+                                <a href="#" class="px-6 py-1 rounded-md bg-ButtonColorSecond text-WhiteColor text-sm font-Ubuntu">All</a>
+                                <a href="#" class="px-6 py-1 rounded-md bg-ButtonColorSecond text-WhiteColor text-sm font-Ubuntu">Bangles</a>
+                                <a href="#" class="px-6 py-1 rounded-md bg-ButtonColorSecond text-WhiteColor text-sm font-Ubuntu">Jwellary</a>
+                                <a href="#" class="px-6 py-1 rounded-md bg-ButtonColorSecond text-WhiteColor text-sm font-Ubuntu">New</a>
+                                <!-- filter buttons -->
+                            </div>
+                            <!-- %%%%%%% product boxes filter option %%%%%%%%% -->
+                            <!-- %%%%%%% product boxes base %%%%%%% -->
+                            <div class="grid grid-cols-2 gap-5 px-5">
+                                <!-- product boxes -->
+                                <div class="flex flex-col justify-center items-center my-8 px-4 py-3 shadow-md rounded-md">
+                                    <!-- heart button -->
+                                    <div class="w-full flex justify-end items-end ">
+                                        <div class="w-8 h-8 flex justify-center items-center rounded-md border-[1px] ">
+                                        <i class="bi bi-heart"></i>
+                                    </div>
+                                    </div>
+                                    <!-- heart button -->
+                                    <!-- product image -->
+                                    <div class="w-full h-full bg-center bg-cover bg-no-repeat px-10">
+                                        <img src="Images/ShopProd-1.png" alt="" class="w-52 h-52">
+                                    </div>
+                                    <!-- product image -->
+                                    <!-- product detail -->
+                                    <div class="w-full py-5">
+                                        <!-- name and rating -->
+                                        <div class="px-5">
+                                            <h3 class="font-SecondaryFont text-secondaryColor">Loreal paris Shampoo</h3>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-half text-ButtonColorFirst text-sm"></i>
+                                        </div>
+                                        <!-- name and rating -->
+                                        <!-- price and cart -->
+                                        <div class="flex justify-between items-center w-full px-5 my-3">
+                                            <!-- price -->
+                                            <div class="flex flex-col">
+                                                <span class="text-secondaryColor text-sm font-Ubuntu">Price</span>
+                                                <h3 class="text-sm font-SecondaryFont">Rs 400</h3>
+                                            </div>
+                                            <!-- price -->
+                                            <!-- button cart -->
+                                            <div>
+                                                <button class="rounded-full px-4 py-1 border-ButtonColorFirst border-[1px] outline-none">
+                                                <a href="#" class="text-sm font-Ubuntu">
+                                                    Add to cart
+                                                </a>
+                                            </button>
+                                            </div>
+                                            <!-- button cart -->
+                                        </div>
+                                        <!-- price and cart -->
+                                    </div>
+                                    <!-- product detail -->
+                                </div>
+                                <!-- product boxes -->
+                                <!-- product boxes -->
+                                <div class="flex flex-col justify-center items-center my-8 px-4 py-3 shadow-md rounded-md">
+                                    <!-- heart button -->
+                                    <div class="w-full flex justify-end items-end ">
+                                        <div class="w-8 h-8 flex justify-center items-center rounded-md border-[1px] ">
+                                        <i class="bi bi-heart"></i>
+                                    </div>
+                                    </div>
+                                    <!-- heart button -->
+                                    <!-- product image -->
+                                    <div class="w-full h-full bg-center bg-cover bg-no-repeat px-10">
+                                        <img src="Images/ShopProd-1.png" alt="" class="w-52 h-52">
+                                    </div>
+                                    <!-- product image -->
+                                    <!-- product detail -->
+                                    <div class="w-full py-5">
+                                        <!-- name and rating -->
+                                        <div class="px-5">
+                                            <h3 class="font-SecondaryFont text-secondaryColor">Loreal paris Shampoo</h3>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-half text-ButtonColorFirst text-sm"></i>
+                                        </div>
+                                        <!-- name and rating -->
+                                        <!-- price and cart -->
+                                        <div class="flex justify-between items-center w-full px-5 my-3">
+                                            <!-- price -->
+                                            <div class="flex flex-col">
+                                                <span class="text-secondaryColor text-sm font-Ubuntu">Price</span>
+                                                <h3 class="text-sm font-SecondaryFont">Rs 400</h3>
+                                            </div>
+                                            <!-- price -->
+                                            <!-- button cart -->
+                                            <div>
+                                                <button class="rounded-full px-4 py-1 border-ButtonColorFirst border-[1px] outline-none">
+                                                <a href="#" class="text-sm font-Ubuntu">
+                                                    Add to cart
+                                                </a>
+                                            </button>
+                                            </div>
+                                            <!-- button cart -->
+                                        </div>
+                                        <!-- price and cart -->
+                                    </div>
+                                    <!-- product detail -->
+                                </div>
+                                <!-- product boxes -->
+                                <!-- product boxes -->
+                                <div class="flex flex-col justify-center items-center my-8 px-4 py-3 shadow-md rounded-md">
+                                    <!-- heart button -->
+                                    <div class="w-full flex justify-end items-end ">
+                                        <div class="w-8 h-8 flex justify-center items-center rounded-md border-[1px] ">
+                                        <i class="bi bi-heart"></i>
+                                    </div>
+                                    </div>
+                                    <!-- heart button -->
+                                    <!-- product image -->
+                                    <div class="w-full h-full bg-center bg-cover bg-no-repeat px-10">
+                                        <img src="Images/ShopProd-1.png" alt="" class="w-52 h-52">
+                                    </div>
+                                    <!-- product image -->
+                                    <!-- product detail -->
+                                    <div class="w-full py-5">
+                                        <!-- name and rating -->
+                                        <div class="px-5">
+                                            <h3 class="font-SecondaryFont text-secondaryColor">Loreal paris Shampoo</h3>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-half text-ButtonColorFirst text-sm"></i>
+                                        </div>
+                                        <!-- name and rating -->
+                                        <!-- price and cart -->
+                                        <div class="flex justify-between items-center w-full px-5 my-3">
+                                            <!-- price -->
+                                            <div class="flex flex-col">
+                                                <span class="text-secondaryColor text-sm font-Ubuntu">Price</span>
+                                                <h3 class="text-sm font-SecondaryFont">Rs 400</h3>
+                                            </div>
+                                            <!-- price -->
+                                            <!-- button cart -->
+                                            <div>
+                                                <button class="rounded-full px-4 py-1 border-ButtonColorFirst border-[1px] outline-none">
+                                                <a href="#" class="text-sm font-Ubuntu">
+                                                    Add to cart
+                                                </a>
+                                            </button>
+                                            </div>
+                                            <!-- button cart -->
+                                        </div>
+                                        <!-- price and cart -->
+                                    </div>
+                                    <!-- product detail -->
+                                </div>
+                                <!-- product boxes -->
+                                <!-- product boxes -->
+                                <div class="flex flex-col justify-center items-center my-8 px-4 py-3 shadow-md rounded-md">
+                                    <!-- heart button -->
+                                    <div class="w-full flex justify-end items-end ">
+                                        <div class="w-8 h-8 flex justify-center items-center rounded-md border-[1px] ">
+                                        <i class="bi bi-heart"></i>
+                                    </div>
+                                    </div>
+                                    <!-- heart button -->
+                                    <!-- product image -->
+                                    <div class="w-full h-full bg-center bg-cover bg-no-repeat px-10">
+                                        <img src="Images/ShopProd-1.png" alt="" class="w-52 h-52">
+                                    </div>
+                                    <!-- product image -->
+                                    <!-- product detail -->
+                                    <div class="w-full py-5">
+                                        <!-- name and rating -->
+                                        <div class="px-5">
+                                            <h3 class="font-SecondaryFont text-secondaryColor">Loreal paris Shampoo</h3>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-half text-ButtonColorFirst text-sm"></i>
+                                        </div>
+                                        <!-- name and rating -->
+                                        <!-- price and cart -->
+                                        <div class="flex justify-between items-center w-full px-5 my-3">
+                                            <!-- price -->
+                                            <div class="flex flex-col">
+                                                <span class="text-secondaryColor text-sm font-Ubuntu">Price</span>
+                                                <h3 class="text-sm font-SecondaryFont">Rs 400</h3>
+                                            </div>
+                                            <!-- price -->
+                                            <!-- button cart -->
+                                            <div>
+                                                <button class="rounded-full px-4 py-1 border-ButtonColorFirst border-[1px] outline-none">
+                                                <a href="#" class="text-sm font-Ubuntu">
+                                                    Add to cart
+                                                </a>
+                                            </button>
+                                            </div>
+                                            <!-- button cart -->
+                                        </div>
+                                        <!-- price and cart -->
+                                    </div>
+                                    <!-- product detail -->
+                                </div>
+                                <!-- product boxes -->
+                                <!-- product boxes -->
+                                <div class="flex flex-col justify-center items-center my-8 px-4 py-3 shadow-md rounded-md">
+                                    <!-- heart button -->
+                                    <div class="w-full flex justify-end items-end ">
+                                        <div class="w-8 h-8 flex justify-center items-center rounded-md border-[1px] ">
+                                        <i class="bi bi-heart"></i>
+                                    </div>
+                                    </div>
+                                    <!-- heart button -->
+                                    <!-- product image -->
+                                    <div class="w-full h-full bg-center bg-cover bg-no-repeat px-10">
+                                        <img src="Images/ShopProd-1.png" alt="" class="w-52 h-52">
+                                    </div>
+                                    <!-- product image -->
+                                    <!-- product detail -->
+                                    <div class="w-full py-5">
+                                        <!-- name and rating -->
+                                        <div class="px-5">
+                                            <h3 class="font-SecondaryFont text-secondaryColor">Loreal paris Shampoo</h3>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-half text-ButtonColorFirst text-sm"></i>
+                                        </div>
+                                        <!-- name and rating -->
+                                        <!-- price and cart -->
+                                        <div class="flex justify-between items-center w-full px-5 my-3">
+                                            <!-- price -->
+                                            <div class="flex flex-col">
+                                                <span class="text-secondaryColor text-sm font-Ubuntu">Price</span>
+                                                <h3 class="text-sm font-SecondaryFont">Rs 400</h3>
+                                            </div>
+                                            <!-- price -->
+                                            <!-- button cart -->
+                                            <div>
+                                                <button class="rounded-full px-4 py-1 border-ButtonColorFirst border-[1px] outline-none">
+                                                <a href="#" class="text-sm font-Ubuntu">
+                                                    Add to cart
+                                                </a>
+                                            </button>
+                                            </div>
+                                            <!-- button cart -->
+                                        </div>
+                                        <!-- price and cart -->
+                                    </div>
+                                    <!-- product detail -->
+                                </div>
+                                <!-- product boxes -->
+                                <!-- product boxes -->
+                                <div class="flex flex-col justify-center items-center my-8 px-4 py-3 shadow-md rounded-md">
+                                    <!-- heart button -->
+                                    <div class="w-full flex justify-end items-end ">
+                                        <div class="w-8 h-8 flex justify-center items-center rounded-md border-[1px] ">
+                                        <i class="bi bi-heart"></i>
+                                    </div>
+                                    </div>
+                                    <!-- heart button -->
+                                    <!-- product image -->
+                                    <div class="w-full h-full bg-center bg-cover bg-no-repeat px-10">
+                                        <img src="Images/ShopProd-1.png" alt="" class="w-52 h-52">
+                                    </div>
+                                    <!-- product image -->
+                                    <!-- product detail -->
+                                    <div class="w-full py-5">
+                                        <!-- name and rating -->
+                                        <div class="px-5">
+                                            <h3 class="font-SecondaryFont text-secondaryColor">Loreal paris Shampoo</h3>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-fill text-ButtonColorFirst text-sm"></i>
+                                            <i class="bi bi-star-half text-ButtonColorFirst text-sm"></i>
+                                        </div>
+                                        <!-- name and rating -->
+                                        <!-- price and cart -->
+                                        <div class="flex justify-between items-center w-full px-5 my-3">
+                                            <!-- price -->
+                                            <div class="flex flex-col">
+                                                <span class="text-secondaryColor text-sm font-Ubuntu">Price</span>
+                                                <h3 class="text-sm font-SecondaryFont">Rs 400</h3>
+                                            </div>
+                                            <!-- price -->
+                                            <!-- button cart -->
+                                            <div>
+                                                <button class="rounded-full px-4 py-1 border-ButtonColorFirst border-[1px] outline-none">
+                                                <a href="#" class="text-sm font-Ubuntu">
+                                                    Add to cart
+                                                </a>
+                                            </button>
+                                            </div>
+                                            <!-- button cart -->
+                                        </div>
+                                        <!-- price and cart -->
+                                    </div>
+                                    <!-- product detail -->
+                                </div>
+                                <!-- product boxes -->
+                            </div>
+                            <!-- %%%%%%% product boxes base %%%%%%% -->
+                        </div>
+                        <!-- %%%%%%% product boxes container and filter buttons code %%%%%%%% -->
+                    </div>
+                    <!-- %%%%%%% product and search bar base code start %%%%%%%% -->
+                </div>
+                <!-- %%%% main product container/section code  ends %%%%%%%%% -->
+                <!-- %%%%% whishlist/right product show sidebar start %%%%%%%%%% -->
+                <div class="">
+
+                </div>
+                <!-- %%%%% whishlist/right product show sidebar  ends %%%%%%%%%% -->
+            </div>
+            <!-- %%%%%%% product and filter option section code  ends %%%%%%%%% -->
+        </section>
+        <!-- %%%%%%%%%%% product and filter section code  ends %%%%%%%%%%%% -->
+    </main>
+    <!-- %%%%%%%% main container %%%%%%%%%%%%%%%-->
+</body>
+
+</html>
